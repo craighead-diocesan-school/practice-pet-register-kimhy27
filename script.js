@@ -5,7 +5,7 @@ let pets = [
     { name: 'Kkami', age: 9, species: 'Dog' },
     { name: 'Berry', age: 8, species: 'Dog' },
     { name: 'Kingbird', age: 11, species: 'bird' }
-]   
+]
 
 function addPet() {
     // lets user input the name of the pet
@@ -29,10 +29,20 @@ function addPet() {
 function showpet() {
     //shows user list of the pets and their information
     for (let pet of pets)
-    alert(pets)
+        alert(pets)
 }
 
-function removePet
+function removePet() {
     // output the name of each pet
+    let index = 0
+    for (let pet of pets) {
+        alert(index + " :" + pet.name)
+        index = index + 1
+    }
+    // get the index of the pet to remove
+    let indextoremove = prompt("Which pet would you like to remove?")
 
+    // remove the pet at the index 
+    pets.splice(indextoremove, 1)
+}
 
