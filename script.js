@@ -7,7 +7,7 @@ let pets = [
     { name: 'Kingbird', age: 11, species: 'bird' }
 ]   
 
-function addName() {
+function addPet() {
     // lets user input the name of the pet
     let name = prompt("What is the name of the pet?")
     // lets user input the age of the pet
@@ -21,18 +21,18 @@ function addName() {
         specie: specie
     }
 
-    // add a new name to add to array of names
+    // add the pet to add to array of pets
     pets.push(pet)
 }
 
-function names() {
-    //shows user names of all the pets
-    alert(NameArray)
+
+function showpet() {
+    //shows user list of the pets and their information
+    for (let pet of pets)
+    alert(pets)
 }
 
-function pet() {
-    //shows user list of the pets and their information
-    alert(pet)
-}
+function removePet
+    // output the name of each pet
 
 
